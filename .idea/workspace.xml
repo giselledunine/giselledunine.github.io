@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51178286-4e18-4dd1-8e68-641cfed3bfbf" name="Default Changelist" comment="" />
+    <list default="true" id="51178286-4e18-4dd1-8e68-641cfed3bfbf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.f93fa806.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.924fd8ac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.924fd8ac.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/home.bfda842a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/home.bfda842a.js.map" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +25,9 @@
         <option value="Vue Single File Component" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622843193681</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="new">
+      <created>1622843305877</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622843305877</updated>
+    </task>
+    <task id="LOCAL-00012" summary="new">
+      <created>1622843523883</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622843523883</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,10 +178,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="243" y="0" key="CommitChangelistDialog2" timestamp="1622843192511">
+    <state x="243" y="0" key="CommitChangelistDialog2" timestamp="1622843522103">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state x="243" y="0" key="CommitChangelistDialog2/0.0.1463.783@0.0.1463.783" timestamp="1622843192511" />
+    <state x="243" y="0" key="CommitChangelistDialog2/0.0.1463.783@0.0.1463.783" timestamp="1622843522103" />
     <state width="532" height="124" key="GridCell.Tab.0.bottom" timestamp="1622814705472">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
@@ -173,9 +198,9 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state width="532" height="124" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1622814705472" />
-    <state x="324" y="120" key="Vcs.Push.Dialog.v2" timestamp="1622843201446">
+    <state x="324" y="120" key="Vcs.Push.Dialog.v2" timestamp="1622843530540">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state x="324" y="120" key="Vcs.Push.Dialog.v2/0.0.1463.783@0.0.1463.783" timestamp="1622843201446" />
+    <state x="324" y="120" key="Vcs.Push.Dialog.v2/0.0.1463.783@0.0.1463.783" timestamp="1622843530540" />
   </component>
 </project>
