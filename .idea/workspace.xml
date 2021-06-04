@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51178286-4e18-4dd1-8e68-641cfed3bfbf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nwLPkE9XBYw3b0krOL6UDgxOXC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PhpstormProjects\landingpage\src\components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm serve">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm serve" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51178286-4e18-4dd1-8e68-641cfed3bfbf" name="Default Changelist" comment="" />
+      <created>1612296184995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612296184995</updated>
+      <workItem from="1612296186478" duration="6895000" />
+      <workItem from="1612343946486" duration="14357000" />
+      <workItem from="1612422531041" duration="10995000" />
+      <workItem from="1617485365400" duration="795000" />
+      <workItem from="1622807099206" duration="2127000" />
+    </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1622816959797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622816959797</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new">
+      <created>1622817336760</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622817336760</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new">
+      <created>1622817448155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622817448155</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new">
+      <created>1622817787945</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622817787945</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new">
+      <created>1622817890061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622817890061</updated>
+    </task>
+    <task id="LOCAL-00006" summary="new">
+      <created>1622841874187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622841874187</updated>
+    </task>
+    <task id="LOCAL-00007" summary="new">
+      <created>1622841949523</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622841949523</updated>
+    </task>
+    <task id="LOCAL-00008" summary="new">
+      <created>1622842576374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622842576374</updated>
+    </task>
+    <task id="LOCAL-00009" summary="new">
+      <created>1622842976708</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622842976708</updated>
+    </task>
+    <task id="LOCAL-00010" summary="new">
+      <created>1622843193681</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622843193681</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="243" y="0" key="CommitChangelistDialog2" timestamp="1622843192511">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state x="243" y="0" key="CommitChangelistDialog2/0.0.1463.783@0.0.1463.783" timestamp="1622843192511" />
+    <state width="532" height="124" key="GridCell.Tab.0.bottom" timestamp="1622814705472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="532" height="124" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1622814705472" />
+    <state width="532" height="124" key="GridCell.Tab.0.center" timestamp="1622814705472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="532" height="124" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1622814705472" />
+    <state width="532" height="124" key="GridCell.Tab.0.left" timestamp="1622814705472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="532" height="124" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1622814705472" />
+    <state width="532" height="124" key="GridCell.Tab.0.right" timestamp="1622814705472">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="532" height="124" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1622814705472" />
+    <state x="324" y="120" key="Vcs.Push.Dialog.v2" timestamp="1622843201446">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state x="324" y="120" key="Vcs.Push.Dialog.v2/0.0.1463.783@0.0.1463.783" timestamp="1622843201446" />
+  </component>
+</project>
