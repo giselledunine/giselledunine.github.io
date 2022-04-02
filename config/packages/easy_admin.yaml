@@ -1,0 +1,14 @@
+# entities:
+#  User:
+#    # ...
+#    list:
+#      fields:
+#        - { property: 'avatar', type: 'image', base_path: '%app.path.product_images%' }
+#    # ...
+#    show:
+#      fields:
+#        - { property: 'avatar', type: 'image', base_path: '%app.path.product_images%' }
+#
+#    form:
+#      fields:
+#        - { property: 'imageFile', type: 'file' }
