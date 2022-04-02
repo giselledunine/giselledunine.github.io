@@ -1,0 +1,73 @@
+{% extends 'composants/navbar.html.twig' %}
+
+{% block title %}Images{% endblock %}
+
+{% block body %}
+     {% apply inline_css %}
+<html>
+<head>
+    <style>
+        .marginDiv {
+            margin-top: 5rem;
+        }
+        .cadre:hover > a > img{
+            opacity: 0%;
+            transition: 0.2s;
+        }
+        .cadre > a > img {
+            border-radius: 100px;
+        }
+        .btn-outline {
+            color: #F57C47;
+            border: 1px solid #F57C47;
+        }
+        .violet {
+            color: #8B9DF3;
+            border: 1px solid #8B9DF3;
+        }
+        .align {
+            margin-top: 38px;
+        }
+        .post {
+            background-color: rgb(245, 124, 71, 30%);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .btn-post {
+            background-color: #F57C47;
+            color: white;
+        }
+        .marginTop {
+            margin-top: 2rem;
+        }
+        .photos {
+            padding: 0;
+        }
+        .photo:hover {
+            transition: 0.2s;
+            opacity: 30%;
+        }
+    </style>
+</head>
+
+    <div class="marginDiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <a class="btn btn-outline violet" href="{{ path('user') }}">Retour</a>
+                    <br/>
+                    <br/>
+                    <a class="btn btn-outline" href="{{ path('images_edit', {'id': image.id}) }}">Editer</a>
+                    <br/>
+                    <br/>
+                    {{ include('images/_delete_form.html.twig') }}
+                </div>
+                <div class="col-10">
+                    <img src="{{ asset("images/" ~ image.imageName)}}" alt={{ image.imageName }} width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endapply %}
+
+{% endblock %}

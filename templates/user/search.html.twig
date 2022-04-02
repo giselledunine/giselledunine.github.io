@@ -1,0 +1,15 @@
+ {{ form_start(searchform, {
+     'attr': {
+        'action': path('search')
+        }
+    })
+ }}
+<div class="row">
+    <div class="col-8">
+        {{ form_widget(searchform.search)}}
+    </div>
+    <div class="col-4 chercher">
+        <button class="btn btn-outline violet" type="submit">Chercher</button>
+    </div>
+</div>
+ {{ form_end(searchform)}}

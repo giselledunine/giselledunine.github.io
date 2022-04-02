@@ -1,0 +1,32 @@
+{% extends 'composants/navbar.html.twig' %}
+
+{% block title %}New Images{% endblock %}
+
+{% block body %}
+    {% apply inline_css %}
+<html>
+<head>
+    <style>
+        .marginDiv {
+            margin-top: 5rem;
+        }
+        .image > button {
+            border: 1px solid;
+        }
+        .post {
+            background-color: rgb(245, 124, 71, 30%);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .btn-post {
+            background-color: #F57C47;
+            color: white;
+        }
+    </style>
+</head>
+    <div class="marginDiv">
+
+        {{ include('images/_form.html.twig') }}
+    </div>
+{% endapply %}
+{% endblock %}

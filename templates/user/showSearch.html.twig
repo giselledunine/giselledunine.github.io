@@ -1,0 +1,58 @@
+{% extends 'composants/navbar.html.twig' %}
+
+{% block title %}Résultat de votre recherche{% endblock %}
+
+{% block body %}
+        {% apply inline_css %}
+<html>
+<head>
+    <style>
+        .marginDiv {
+            margin-top: 5rem;
+        }
+        .violet {
+            border: 1px solid #8b9df3;
+            color: #8b9df3;
+            width: 100%;
+        }
+        .violet:hover {
+            border: 1px solid #f57c47;
+            color: #f57c47;
+        }
+        .chercher {
+            display: flex;
+            justify-content: right;
+        }
+    </style>
+</head>
+
+    <div class="marginDiv">
+        <div class="container col-6">
+            {{ render(controller(
+                'App\\Controller\\UserController::search',
+            )) }}
+        </div>
+
+        {% for user in users %}
+            <div class="list-group">
+                <div class="container col-6">
+                    <a href="{{ path('one_user', {'id': user.id}) }}" class="list-group-item list-group-item-action" aria-current="true" style="margin-top: 50px">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{{ user.firstName }} - {{ user.lastName }}</h5>
+                            <small>{{ user.birthDate|date('d-m-Y') }}</small>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1">{{ user.alternanceJob }}</p>
+                            {% if user.imageName %}
+                                <img src="{{ asset("images/" ~ user.imageName)}}" alt={{ user.imageName }} width="10%">
+                            {% endif %}
+                        </div>
+                        <small>{{ user.city }}</small>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endapply %}
+
+{% endblock %}

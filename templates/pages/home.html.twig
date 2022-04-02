@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{% apply inline_css %}
+        <html>
+        <head>
+            <style>
+                .connection { text-align: center; }
+            </style>
+        </head>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <img src="{{ asset('/images/home.jpg') }}" alt="home-image" width="100%">
+                <a href='https://www.freepik.com/vectors/sale'>Sale vector created by pch.vector - www.freepik.com</a>
+            </div>
+            <div class="col-4 connection">
+                Connection
+            </div>
+        </div>
+    </div>
+{% endapply %}
+{% endblock %}

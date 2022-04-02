@@ -1,0 +1,47 @@
+{% extends 'composants/navbar.html.twig' %}
+
+{% block title %}Hello LstUserController!{% endblock %}
+
+{% block body %}
+        {% apply inline_css %}
+<html>
+<head>
+    <style>
+        .cadre {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+        .cadre > img {
+            border-radius: 100px;
+        }
+        .marginDiv {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+    </style>
+</head>
+<div class="marginDiv">
+    {% for lstUser in lstUsers %}
+        <div class="list-group">
+            <div class="container col-6">
+                <a href="{{ path('one_user', {'id': lstUser.id}) }}" class="list-group-item list-group-item-action" aria-current="true" style="margin-top: 50px">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ lstUser.firstName }} - {{ lstUser.lastName }}</h5>
+                        <small>{{ lstUser.birthDate|date('d-m-Y') }}</small>
+                    </div>
+                    <div class="d-flex w-100 justify-content-end">
+                        {% if lstUser.imageName %}
+                            <figure class="cadre">
+                                <img src="{{ asset("images/" ~ lstUser.imageName)}}" alt={{ lstUser.imageName }} width="100%">
+                            </figure>                        {% endif %}
+                    </div>
+                    <small>{{ lstUser.city }}</small>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endapply %}
+
+{% endblock %}

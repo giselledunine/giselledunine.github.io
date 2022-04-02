@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+        {% apply inline_css %}
+<head>
+    <style>
+        .btn-outline {
+            color: white;
+            background-color: #F57C47;
+        }
+        .marginDiv {
+            margin-bottom: 4rem;
+        }
+        .form-group {
+            margin: 1rem 0;
+        }
+        .register {
+            background-color: rgb(245, 124, 71, 30%);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .title {
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-bottom: 0.5rem;
+        }
+        h1 {
+            font-size: 5rem;
+            color: #8b9df3;
+        }
+    </style>
+</head>
+<div class="container marginDiv">
+
+    {{ form_start(registrationForm) }}
+    <div class="row">
+        <div class="col-8 m-auto">
+            <div class="row">
+                <div class="col-4">
+                    <img src="{{ asset('images/register.jpg') }}" alt="register" height="200px">
+
+                </div>
+                <div class="col-8 title">
+
+                    <h1>Inscription</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8 m-auto register">
+
+
+                    {{ form_row(registrationForm.email) }}
+                    {{ form_row(registrationForm.plainPassword, {
+                        label: 'Password'
+                    }) }}
+                    {{ form_row(registrationForm.firstName) }}
+                    {{ form_row(registrationForm.lastName) }}
+                    {{ form_row(registrationForm.imageFile, {'attr': {'class': 'form-control'}}) }}
+            {{ form_row(registrationForm.birthDate) }}
+
+            {{ form_row(registrationForm.address) }}
+            {{ form_row(registrationForm.city) }}
+            {{ form_row(registrationForm.alternanceJob) }}
+            {{ form_row(registrationForm.groupName) }}
+
+            {{ form_row(registrationForm.agreeTerms) }}
+            <button type="submit" class="btn btn-outline btn-lg">Valider</button>
+
+        </div>
+            {{ form_end(registrationForm) }}
+        </div>
+    </div>
+</div>
+
+
+{% endapply %}
+
+
+{% endblock %}

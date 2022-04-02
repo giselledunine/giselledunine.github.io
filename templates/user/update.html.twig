@@ -1,0 +1,61 @@
+{% extends 'composants/navbar.html.twig' %}
+
+{% block title %}{{ app.user.firstName }} {{ app.user.lastName }}{% endblock %}
+
+{% block body %}
+    {% apply inline_css %}
+    <html>
+    <head>
+        <style>
+            .vich-image > a > img {
+                width: 20%;
+            }
+            .vich-image > .custom-file > input > button {
+                background-color: black;
+                color: white;
+            }
+            .btn-outline {
+                color: white;
+                background-color: #F57C47;
+            }
+            .register {
+                background-color: rgb(245, 124, 71, 30%);
+                padding: 2rem;
+                border-radius: 8px;
+            }
+            .form-group {
+                margin: 0.5rem 0;
+            }
+            h1 {
+                font-size: 3rem;
+                color: #8b9df3;
+            }
+        </style>
+    </head>
+    <div style=" margin-top: 3rem; padding: 2rem " class=" container">
+        {{ form_start(updateUserForm) }}
+        <h1>Modifier mes informations</h1>
+        <div class="container row register">
+            <div class="col-6">
+                {{ form_row(updateUserForm.email) }}
+                {{ form_row(updateUserForm.firstName) }}
+                {{ form_row(updateUserForm.lastName) }}
+                {{ form_row(updateUserForm.birthDate) }}
+                {{ form_row(updateUserForm.address) }}
+                {{ form_row(updateUserForm.city) }}
+
+            </div>
+            <div class="col-6">
+
+                {{ form_row(updateUserForm.alternanceJob) }}
+                {{ form_row(updateUserForm.groupName) }}
+                <br/>
+                <button type="submit" class="btn btn-outline btn-lg">Valdier</button>
+            </div>
+        </div>
+        {{ form_end(updateUserForm) }}
+
+
+    {% endapply %}
+
+{% endblock %}

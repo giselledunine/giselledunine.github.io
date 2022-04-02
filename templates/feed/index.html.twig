@@ -1,0 +1,61 @@
+{% extends 'composants/feed.html.twig'%}
+{% block title %}Feed{% endblock %}
+
+
+
+{% block body %}
+    {% apply inline_css %}
+<html>
+<head>
+    <style>
+        .image > button {
+            border: 1px solid;
+        }
+        .post {
+            background-color: rgb(245, 124, 71, 30%);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .btn-post {
+            background-color: #F57C47;
+            color: white;
+        }
+    </style>
+</head>
+    {% for message in app.flashes('message') %}
+        <div class="alert alert-success" role="alert" style="margin-top: 80px">
+            {{ message }}
+        </div>
+    {% endfor %}
+    <div class="d-grid gap-2 mx-auto ">
+        <div class="post">
+            {{ form_start(postForm)}}
+            {{ form_row(postForm.name)}}
+            {{ form_row(postForm.imageFile, { 'attr': {'class': 'form-control'}})}}
+            <button class="btn btn btn-post">Poster</button>
+            {{ form_end(postForm) }}
+        </div>
+    </div>
+    {% for post in posts %}
+        <div class="list-group">
+            <div class="container">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true" style="margin-top: 50px">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ post.user.firstName }} {{ post.user.lastName }}</h5>
+                        <small>{{ post.createdAt|date('d-m-Y') }}</small>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">{{ post.name }}</p>
+                        {% if post.imageName %}
+                        <img src="{{ asset("images/" ~ post.imageName)}}" alt={{ post.imageName }} width="20%">
+                        {% endif %}
+                    </div>
+                    <small>{{ post.user.city }}</small>
+
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+{% endapply %}
+
+{% endblock %}

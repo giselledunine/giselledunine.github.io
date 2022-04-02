@@ -1,0 +1,72 @@
+{% extends 'composants/navbar.html.twig' %}
+
+{% block title %}Images index{% endblock %}
+
+{% block body %}
+        {% apply inline_css %}
+<html>
+<head>
+    <style>
+        .marginDiv {
+            margin-top: 5rem;
+        }
+        .cadre:hover > a > img{
+            opacity: 0%;
+            transition: 0.2s;
+        }
+        .cadre > a > img {
+            border-radius: 100px;
+        }
+        .btn-outline {
+            color: #F57C47;
+            border: 1px solid #F57C47;
+        }
+        .violet {
+            color: #8B9DF3;
+            border: 1px solid #8B9DF3;
+        }
+        .align {
+            margin-top: 38px;
+        }
+        .post {
+            background-color: rgb(245, 124, 71, 30%);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .btn-post {
+            background-color: #F57C47;
+            color: white;
+        }
+        .marginTop {
+            margin-top: 2rem;
+        }
+        .photos {
+            padding: 0;
+        }
+        .photo:hover {
+            transition: 0.2s;
+            opacity: 30%;
+        }
+    </style>
+</head>
+   <div class=" container marginDiv">
+       <h1>Vos images</h1>
+       <a class="btn btn-outline" href="{{ path('user') }}">Ajouter des photos</a>
+
+
+       <div class="container">
+           <div class="row">
+               {% for image in app.user.images  %}
+                   <div class="col-4 marginTop photo">
+                       <a href="{{ path('images_show', {'id': image.id}) }}">
+                           <img src="{{ asset("images/" ~ image.imageName)}}" alt={{ image.imageName }} width="100%">
+                       </a>
+                   </div>
+               {% endfor %}
+           </div>
+       </div>
+
+   </div>
+{% endapply %}
+
+{% endblock %}
